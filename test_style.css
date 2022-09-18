@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.my_grid {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+    grid-column: span 3;
+    padding: 20px;
+    background-color: rgb(67, 7, 7);
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+footer {
+    grid-column: span 3;
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.Sidenav {
+    /* max-width: 650px; */
+    background-color: burlywood;
+    height: 100%;
+}
+
+.Sidenav li {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.Sidenav li a {
+    text-decoration: none;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+    background-color: chocolate;
+}
+
+@media screen and (max-width:868px) {
+    .my_grid {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Sidenav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
