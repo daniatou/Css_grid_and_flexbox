@@ -12,7 +12,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
+
 
 }
 
@@ -35,7 +35,6 @@ footer {
 }
 
 .Sidenav {
-    /* max-width: 650px; */
     background-color: burlywood;
     height: 100%;
 }
